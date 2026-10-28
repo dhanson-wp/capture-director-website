@@ -9,11 +9,11 @@ npm run build
 npm run preview
 ```
 
-Publish only `dist/` to Spacefast. The CLI source at the repository root is independent of this site.
+Publish only `dist/` to Spacefast. This site lives in its own repository; the Capture director tool is at [dhanson-wp/capture-director](https://github.com/dhanson-wp/capture-director).
 
 ## Demo asset
 
-The website serves the existing `docs/demo.mp4` as `/demo.mp4` so playback doesn't depend on a GitHub attachment redirect. Video binaries stay ignored by Git. Before building from a fresh checkout, copy the approved finished demo to `public/demo.mp4` from your local media archive. `public/demo-poster.png` is the repository's existing poster. No original footage, render projects, or music beds are included.
+The website serves the finished demo as `/demo.mp4` so playback doesn't depend on a GitHub attachment redirect. `public/demo.mp4` and `public/demo-poster.png` are committed, so a fresh checkout builds the full page. No original footage, render projects, or music beds are included.
 
 ## Design references
 
@@ -33,7 +33,7 @@ Motion follows Emil Kowalski's Animate guidance: explanation on the marketing se
 
 ### Scroll-story media
 
-`public/story.mp4` is a 1280px, silent, frequent-keyframe derivative of the existing finished demo for responsive scroll seeking. It remains Git-ignored. Four JPEGs in `public/story/` are real frame extractions at 2, 8, 15, and 24 seconds of `docs/demo.mp4`, used in the illustrative editing timeline. They are website assets, not original footage or a video-production project. The original site logo is unchanged.
+`public/story.mp4` is a 1280px, silent, frequent-keyframe derivative of the existing finished demo for responsive scroll seeking. It's committed with the site. Four JPEGs in `public/story/` are real frame extractions at 2, 8, 15, and 24 seconds of the finished demo, used in the illustrative editing timeline. They are website assets, not original footage or a video-production project. The original site logo is unchanged.
 
 The title no longer animates or changes transforms on load. Preloaded, self-hosted fonts avoid a visible fallback swap. Buttons and icons stay anchored, with surface feedback on hover and press. The four scroll chapters replace the earlier decorative sequence.
 
